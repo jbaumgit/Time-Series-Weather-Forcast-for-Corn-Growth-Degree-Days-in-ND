@@ -31,8 +31,10 @@ Thirteen factors are included in this data.
 ## EDA
 
 ![Alt text](Images/SeasonalPatternofMaxandMinTemperatures.jpg)
+The High and Low Temperatures continue in the yearly pattern of the seasons. The range is between 100 and -20 degrees Fahrenheit.
 
 ![Alt text](Images/CalculationofGrowthDegreeDays.jpg)
+
 Growing degree day (GDD) accumulations, rather than calendar days, more precisely characterize the length of the growing season. Unlike the number of days between killing frosts, GGDs provide quantitative information about temperature during the growing season. In calculating GDDs for corn, temperatures from a lower limit of 50 degrees and an upper limit of 86 degrees are accumulated for the growing season by applying the formula below to each day’s maximum and minimum temperatures:
 
 Corn GDD=(Maximum temperature + minimum temperature)/2 - 50
@@ -41,15 +43,25 @@ Maximum temperatures higher than 86 degrees are entered as 86 and temperatures b
 
 ![Alt text](Images/SeasonalPatternofGrowthDegreeDays.jpg)
 
+
+
 ## Modeling
 
 ![Alt text](Images/MaxTempShiftedOneWeek.jpg)
+![Alt text](Images/MinTempShiftedOneWeek.jpg)
+
+The first simple model is just shifting the values ahead one week as seen in the graphs above. 
 
 ![Alt text](Images/MaxTempForecastwithSARIMA.jpg)
+![Alt text](Images/MinTempForecastwithSARIMA.jpg)
+
+The final model was a tuned SARIMA model which accounts for the seasonality better. 
 
 ## Prediction
 
 ![Alt text](Images/GrowthDegreeDaysbyYear.jpg)
+
+Using the predicted temperatures from the tuned SARIMA model, the Growth Degree Days can be predicted as 310 GDD for 2024.
 
 ## Appendix
 
