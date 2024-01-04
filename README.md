@@ -2,6 +2,12 @@
 Photo by <a href="https://martinvorel.com/">Martin Vorel</a>
 # ND Corn Growth Degree Days Predictor
 
+It’s Corn!
+
+From fuel such as E85, to livestock feed, to sweeteners in your soft drinks, to cosmetics and adhesives, water filtration systems, PLA plastics that are used in 3D printers, a natural herbicide, binders in medications, and of course food, corn is in everything. 
+
+Corn is a nearly $10 billion industry in ND alone. 
+
 ## Business Problem
 
 Varieties of corn are optimized for different numbers of growth days. Using weather data from NDAWN, we will produce a time series analysis that can predict weather features for growth days. 
@@ -39,11 +45,11 @@ Growing degree day (GDD) accumulations, rather than calendar days, more precisel
 
 Corn GDD=(Maximum temperature + minimum temperature)/2 - 50
 
-Maximum temperatures higher than 86 degrees are entered as 86 and temperatures below 50 degrees are entered as 50 in the formula. GDDs are accumulated from seedling emergence until physiological maturity. Historical and current season GGD accumulations can be obtained from the North Dakota State University NDAWN weather site at https://ndawn.ndsu.nodak.edu/corn-growing-degree-days.html.
+Maximum temperatures higher than 86 degrees are entered as 86 and temperatures below 50 degrees are entered as 50 in the formula. GDDs are accumulated from seedling emergence until physiological maturity. 
 
 ![Alt text](Images/SeasonalPatternofGrowthDegreeDays.jpg)
 
-
+GDD peaks at about 40 in the summer months and drops to zero near the end of the fall. 
 
 ## Modeling
 
@@ -61,7 +67,7 @@ The final model was a tuned SARIMA model which accounts for the seasonality bett
 
 ![Alt text](Images/GrowthDegreeDaysbyYear.jpg)
 
-Using the predicted temperatures from the tuned SARIMA model, the Growth Degree Days can be predicted as 310 GDD for 2024.
+Using the predicted temperatures from the tuned SARIMA model, the Growth Degree Days can be predicted as 3,500 GDD for 2024.
 
 ## Appendix
 
